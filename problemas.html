@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas para Turistas | Provincia de El Oro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Urma <span>– El Oro</span></h1>
+            <p data-i18n="subtitulo-problemas">Problemas que pueden enfrentar los turistas</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" data-i18n="nav-inicio">Inicio</a></li>
+            <li><a href="problemas.html" class="activo" data-i18n="nav-problemas">Problemas</a></li>
+            <li><a href="consejos.html" data-i18n="nav-consejos">Consejos</a></li>
+            <li><a href="cantones.html" data-i18n="nav-cantones">Cantones</a></li>
+            <li><a href="paquetes.html" data-i18n="nav-paquetes">Paquetes</a></li>
+            <li class="idioma-switch">
+                <button class="btn-idioma activo" data-lang="es" onclick="cambiarIdioma('es')">ES</button>
+                <button class="btn-idioma" data-lang="en" onclick="cambiarIdioma('en')">EN</button>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+
+        <section>
+            <h2 data-i18n="problemas-titulo">Principales problemas para turistas</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Aerial_image_of_Machala%2C_Ecuador.jpg/800px-Aerial_image_of_Machala%2C_Ecuador.jpg" 
+                 alt="Vista de Machala" 
+                 class="imagen-principal">
+            <p class="intro" data-i18n="problemas-intro">
+                Antes de viajar es importante conocer los desafíos reales que se han reportado 
+                en los últimos años en la provincia de El Oro.
+            </p>
+
+            <div class="problemas-grid">
+                <article class="problema-card" onclick="toggleDetalle(this)">
+                    <h3 data-i18n="prob1-titulo">1. Inseguridad y delincuencia</h3>
+                    <p class="resumen" data-i18n="prob1-resumen">Es el problema más reportado en zonas costeras.</p>
+                    <div class="detalle">
+                        <p data-i18n="prob1-detalle">
+                            En cantones como Machala, Puerto Bolívar, El Guabo, Bajo Alto y Huaquillas 
+                            se han registrado episodios de violencia. Esto ha reducido la afluencia 
+                            turística en playas y malecones, especialmente durante feriados.
+                        </p>
+                    </div>
+                    <span class="ver-mas" data-i18n="ver-mas">Clic para más información ▼</span>
+                </article>
+
+                <article class="problema-card" onclick="toggleDetalle(this)">
+                    <h3 data-i18n="prob2-titulo">2. Percepción de riesgo</h3>
+                    <p class="resumen" data-i18n="prob2-resumen">La imagen de la provincia se ha visto afectada.</p>
+                    <div class="detalle">
+                        <p data-i18n="prob2-detalle">
+                            Aunque no todos los cantones tienen el mismo nivel de riesgo, 
+                            muchos turistas nacionales prefieren viajar a Perú (Máncora, Zorritos) 
+                            o a otras provincias ecuatorianas por considerarlo más seguro.
+                        </p>
+                    </div>
+                    <span class="ver-mas" data-i18n="ver-mas">Clic para más información ▼</span>
+                </article>
+
+                <article class="problema-card" onclick="toggleDetalle(this)">
+                    <h3 data-i18n="prob3-titulo">3. Condiciones climáticas y oleaje</h3>
+                    <p class="resumen" data-i18n="prob3-resumen">Alertas frecuentes en playas durante feriados.</p>
+                    <div class="detalle">
+                        <p data-i18n="prob3-detalle">
+                            Es común que se emitan alertas por oleaje peligroso en playas como Jambelí. 
+                            En temporada de lluvias (enero-abril) pueden ocurrir desbordamientos de ríos 
+                            y cierres temporales de carreteras.
+                        </p>
+                    </div>
+                    <span class="ver-mas" data-i18n="ver-mas">Clic para más información ▼</span>
+                </article>
+
+                <article class="problema-card" onclick="toggleDetalle(this)">
+                    <h3 data-i18n="prob4-titulo">4. Infraestructura vial</h3>
+                    <p class="resumen" data-i18n="prob4-resumen">Algunas vías hacia la zona alta están en mal estado.</p>
+                    <div class="detalle">
+                        <p data-i18n="prob4-detalle">
+                            Las carreteras hacia destinos de altura (Zaruma, Piñas, Portovelo) 
+                            o hacia ciertas playas pueden presentar daños o trabajos de mantenimiento, 
+                            lo que alarga los tiempos de viaje.
+                        </p>
+                    </div>
+                    <span class="ver-mas" data-i18n="ver-mas">Clic para más información ▼</span>
+                </article>
+
+                <article class="problema-card" onclick="toggleDetalle(this)">
+                    <h3 data-i18n="prob5-titulo">5. Baja ocupación en zonas costeras</h3>
+                    <p class="resumen" data-i18n="prob5-resumen">Hoteles y servicios reducidos en algunas playas.</p>
+                    <div class="detalle">
+                        <p data-i18n="prob5-detalle">
+                            En destinos como Bajo Alto, Jambelí y Puerto Bolívar la oferta turística 
+                            se ha visto afectada. Algunos establecimientos cierran temporalmente 
+                            o reducen servicios por falta de visitantes.
+                        </p>
+                    </div>
+                    <span class="ver-mas" data-i18n="ver-mas">Clic para más información ▼</span>
+                </article>
+
+                <article class="problema-card" onclick="toggleDetalle(this)">
+                    <h3 data-i18n="prob6-titulo">6. Competencia con destinos fronterizos</h3>
+                    <p class="resumen" data-i18n="prob6-resumen">Muchos prefieren cruzar a Perú.</p>
+                    <div class="detalle">
+                        <p data-i18n="prob6-detalle">
+                            La cercanía con Perú hace que muchos ecuatorianos elijan cruzar la frontera 
+                            por precio y percepción de mayor seguridad, impactando directamente 
+                            el turismo interno de El Oro.
+                        </p>
+                    </div>
+                    <span class="ver-mas" data-i18n="ver-mas">Clic para más información ▼</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="aviso">
+            <h3 data-i18n="aviso-titulo">Importante</h3>
+            <p data-i18n="aviso-texto">
+                La situación de seguridad puede cambiar. Se recomienda consultar fuentes oficiales 
+                o medios locales antes de viajar, especialmente a zonas costeras.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="marca">Urma</div>
+        <p data-i18n="footer1">Sitio informativo sobre la Provincia de El Oro – Ecuador</p>
+        <p><a href="index.html" data-i18n="volver-inicio">Volver al inicio</a></p>
+    </footer>
+
+    <script src="idioma.js"></script>
+    <script>
+        function toggleDetalle(card) {
+            card.classList.toggle('abierto');
+            const span = card.querySelector('.ver-mas');
+            if (card.classList.contains('abierto')) {
+                span.textContent = (idiomaActual === 'es') ? 'Clic para ocultar ▲' : 'Click to hide ▲';
+            } else {
+                span.textContent = (idiomaActual === 'es') ? 'Clic para más información ▼' : 'Click for more information ▼';
+            }
+        }
+    </script>
+
+</body>
+</html>

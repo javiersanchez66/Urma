@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantones | Provincia de El Oro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Urma <span>– El Oro</span></h1>
+            <p data-i18n="subtitulo-cantones">Los 14 cantones de la provincia</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" data-i18n="nav-inicio">Inicio</a></li>
+            <li><a href="problemas.html" data-i18n="nav-problemas">Problemas</a></li>
+            <li><a href="consejos.html" data-i18n="nav-consejos">Consejos</a></li>
+            <li><a href="cantones.html" data-i18n="nav-cantones">Cantones</a></li>
+            <li><a href="paquetes.html" data-i18n="nav-paquetes">Paquetes</a></li>
+            <li class="idioma-switch">
+                <button class="btn-idioma activo" data-lang="es" onclick="cambiarIdioma('es')">ES</button>
+                <button class="btn-idioma" data-lang="en" onclick="cambiarIdioma('en')">EN</button>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+
+        <section>
+            <h2 data-i18n="cantones-titulo">Cantones de El Oro</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Zaruma%2C_Ecuador_-_panoramio.jpg" 
+                 alt="Vista de Zaruma, cantón de la zona alta de El Oro" 
+                 class="imagen-principal imagen-zaruma">
+            <p class="intro" data-i18n="cantones-intro">
+                Haz clic en cada cantón para ver información básica. 
+                Puedes filtrar por zona:
+            </p>
+
+            <div class="filtros">
+                <button class="filtro-btn activo" onclick="filtrar('todos')" data-i18n="filtro-todos">Todos</button>
+                <button class="filtro-btn" onclick="filtrar('costa')" data-i18n="filtro-costa">Zona costera</button>
+                <button class="filtro-btn" onclick="filtrar('altura')" data-i18n="filtro-altura">Zona alta</button>
+            </div>
+
+            <div class="cantones-grid" id="lista-cantones">
+
+                <div class="canton-card" data-zona="costa" onclick="mostrarInfo(this)">
+                    <h3>Machala</h3>
+                    <p class="cabecera" data-i18n="cabecera-capital">Capital provincial</p>
+                    <div class="info-extra">
+                        <p data-i18n="info-machala">Principal centro urbano y comercial. Puerto Bolívar es su puerto marítimo. Zona con mayor reportes de inseguridad en los últimos años.</p>
+                    </div>
+                </div>
+
+                <div class="canton-card" data-zona="costa" onclick="mostrarInfo(this)">
+                    <h3>Pasaje</h3>
+                    <p class="cabecera">Pasaje</p>
+                    <div class="info-extra">
+                        <p data-i18n="info-pasaje">Importante cantón agrícola. Se encuentra entre Machala y la zona alta. Ha registrado episodios de violencia en feriados.</p>
+                    </div>
+                </div>
+
+                <div class="canton-card" data-zona="costa" onclick="mostrarInfo(this)">
+                    <h3>Santa Rosa</h3>
+                    <p class="cabecera">Santa Rosa</p>
+                    <div class="info-extra">
+                        <p data-i18n="info-santa-rosa">Uno de los cantones más grandes. Tiene aeropuerto y conexión con la frontera. Zona mixta de costa y valle.</p>
+                    </div>
+                </div>
+
+                <div class="canton-card" data-zona="costa" onclick="mostrarInfo(this)">
+                    <h3>Huaquillas</h3>
+                    <p class="cabecera">Huaquillas</p>
+                    <div class="info-extra">
+                        <p data-i18n="info-huaquillas">Ciudad fronteriza con Perú. Alto movimiento comercial. Ha tenido reportes de inseguridad relacionados con su ubicación estratégica.</p>
+                    </div>
+                </div>
+
+                <div class="canton-card" data-zona="costa" onclick="mostrarInfo(this)">
+                    <h3>El Guabo</h3>
+                    <p class="cabecera">El Guabo</p>
+                    <div class="info-extra">
+                        <p data-i18n="info-el-guabo">Incluye la playa de Bajo Alto. Una de las zonas más afectadas por la baja de turismo debido a la inseguridad.</p>
+                    </div>
+                </div>
+
+                <div class="canton-card" data-zona="costa" onclick="mostrarInfo(this)">
+                    <h3>Arenillas</h3>
+                    <p class="cabecera">Arenillas</p>
+                    <div class="info-extra">
+                        <p data-i18n="info-arenillas">Cercano a la frontera. Zona agrícola y de paso. Ha reportado hechos violentos en años recientes.</p>
+                    </div>
+                </div>
+
+                <div class="canton-card" data-zona="altura" onclick="mostrarInfo(this)">
+                    <h3>Piñas</h3>
+                    <p class="cabecera">Piñas</p>
+                    <div class="info-extra">
+                        <p data-i18n="info-pinas">Conocida como “Orquidario del Ecuador”. Destino de la zona alta con buena percepción de seguridad y turismo cultural.</p>
+                    </div>
+                </div>
+
+                <div class="canton-card" data-zona="altura" onclick="mostrarInfo(this)">
+                    <h3>Zaruma</h3>
+                    <p class="cabecera">Zaruma</p>
+                    <div class="info-extra">
+                        <p data-i18n="info-zaruma">Ciudad histórica y minera. Arquitectura colonial y turismo cultural. Una de las preferidas por visitantes que buscan tranquilidad.</p>
+                    </div>
+                </div>
+
+                <div class="canton-card" data-zona="altura" onclick="mostrarInfo(this)">
+                    <h3>Portovelo</h3>
+                    <p class="cabecera">Portovelo</p>
+                    <div class="info-extra">
+                        <p data-i18n="info-portovelo">Histórica ciudad minera. Cercana a Zaruma. Destino de la zona alta con afluencia de turistas en feriados.</p>
+                    </div>
+                </div>
+
+                <div class="canton-card" data-zona="altura" onclick="mostrarInfo(this)">
+                    <h3>Atahualpa</h3>
+                    <p class="cabecera">Paccha</p>
+                    <div class="info-extra">
+                        <p data-i18n="info-atahualpa">Cantón de la zona alta. Paisajes montañosos y ambiente más tranquilo. Buena opción para turismo rural.</p>
+                    </div>
+                </div>
+
+                <div class="canton-card" data-zona="altura" onclick="mostrarInfo(this)">
+                    <h3>Balsas</h3>
+                    <p class="cabecera">Balsas</p>
+                    <div class="info-extra">
+                        <p data-i18n="info-balsas">Pequeño cantón de la zona alta. Ambiente rural y tranquilo.</p>
+                    </div>
+                </div>
+
+                <div class="canton-card" data-zona="altura" onclick="mostrarInfo(this)">
+                    <h3>Marcabelí</h3>
+                    <p class="cabecera">Marcabelí</p>
+                    <div class="info-extra">
+                        <p data-i18n="info-marcabeli">Cantón de altura con economía agrícola. Poco flujo turístico masivo, ambiente sosegado.</p>
+                    </div>
+                </div>
+
+                <div class="canton-card" data-zona="altura" onclick="mostrarInfo(this)">
+                    <h3>Chilla</h3>
+                    <p class="cabecera">Chilla</p>
+                    <div class="info-extra">
+                        <p data-i18n="info-chilla">Uno de los cantones menos poblados. Zona montañosa y rural.</p>
+                    </div>
+                </div>
+
+                <div class="canton-card" data-zona="altura" onclick="mostrarInfo(this)">
+                    <h3>Las Lajas</h3>
+                    <p class="cabecera">La Victoria</p>
+                    <div class="info-extra">
+                        <p data-i18n="info-las-lajas">Cantón pequeño de la zona alta. Ambiente rural y tranquilo.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="marca">Urma</div>
+        <p data-i18n="footer1">Sitio informativo sobre la Provincia de El Oro – Ecuador</p>
+        <p><a href="index.html" data-i18n="volver-inicio">Volver al inicio</a></p>
+    </footer>
+
+    <script src="idioma.js"></script>
+    <script>
+        function filtrar(zona) {
+            document.querySelectorAll('.filtro-btn').forEach(btn => btn.classList.remove('activo'));
+            event.target.classList.add('activo');
+
+            const tarjetas = document.querySelectorAll('.canton-card');
+            tarjetas.forEach(card => {
+                if (zona === 'todos' || card.dataset.zona === zona) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function mostrarInfo(card) {
+            document.querySelectorAll('.canton-card').forEach(c => {
+                if (c !== card) c.classList.remove('abierto');
+            });
+            card.classList.toggle('abierto');
+        }
+    </script>
+
+</body>
+</html>

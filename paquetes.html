@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes Turísticos | Urma – El Oro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Urma <span>– El Oro</span></h1>
+            <p data-i18n="subtitulo-paquetes">Paquetes turísticos pensados para ti</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" data-i18n="nav-inicio">Inicio</a></li>
+            <li><a href="problemas.html" data-i18n="nav-problemas">Problemas</a></li>
+            <li><a href="consejos.html" data-i18n="nav-consejos">Consejos</a></li>
+            <li><a href="cantones.html" data-i18n="nav-cantones">Cantones</a></li>
+            <li><a href="paquetes.html" class="activo" data-i18n="nav-paquetes">Paquetes</a></li>
+            <li class="idioma-switch">
+                <button class="btn-idioma activo" data-lang="es" onclick="cambiarIdioma('es')">ES</button>
+                <button class="btn-idioma" data-lang="en" onclick="cambiarIdioma('en')">EN</button>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+
+        <section>
+            <h2 data-i18n="paquetes-titulo">Nuestros Paquetes Turísticos</h2>
+            <p class="intro" data-i18n="paquetes-intro">
+                Elige el plan que mejor se adapte a tu presupuesto y estilo de viaje. 
+                Todos incluyen orientación sobre seguridad y recomendaciones actualizadas.
+            </p>
+
+            <div class="paquetes-grid">
+
+                <!-- PAQUETE 1 – ECONÓMICO -->
+                <article class="paquete-card">
+                    <div class="paquete-header economico">
+                        <span class="etiqueta" data-i18n="etiqueta-economico">Económico</span>
+                        <h3 data-i18n="paq1-nombre">Escapada Jambelí</h3>
+                        <div class="precio">$45 <span data-i18n="por-persona">/ persona</span></div>
+                        <p data-i18n="paq1-duracion">1 día</p>
+                    </div>
+                    <div class="paquete-body">
+                        <ul>
+                            <li data-i18n="paq1-i1">Transporte ida y vuelta desde Machala</li>
+                            <li data-i18n="paq1-i2">Paseo en lancha a las islas de Jambelí</li>
+                            <li data-i18n="paq1-i3">Tiempo libre en playa</li>
+                            <li data-i18n="paq1-i4">Almuerzo típico incluido</li>
+                            <li data-i18n="paq1-i5">Guía local básico</li>
+                            <li data-i18n="paq1-i6">Recomendaciones de seguridad</li>
+                        </ul>
+                    </div>
+                    <div class="paquete-footer">
+                        <a href="#" class="btn btn-verde" data-i18n="btn-reservar">Consultar disponibilidad</a>
+                    </div>
+                </article>
+
+                <!-- PAQUETE 2 – INTERMEDIO (POPULAR) -->
+                <article class="paquete-card">
+                    <div class="paquete-header intermedio">
+                        <span class="badge-popular" data-i18n="mas-popular">Más popular</span>
+                        <span class="etiqueta" data-i18n="etiqueta-intermedio">Intermedio</span>
+                        <h3 data-i18n="paq2-nombre">Costa & Sierra</h3>
+                        <div class="precio">$120 <span data-i18n="por-persona">/ persona</span></div>
+                        <p data-i18n="paq2-duracion">2 días / 1 noche</p>
+                    </div>
+                    <div class="paquete-body">
+                        <ul>
+                            <li data-i18n="paq2-i1">Día 1: Playas de Jambelí + Puerto Bolívar</li>
+                            <li data-i18n="paq2-i2">Día 2: Zaruma + Portovelo (zona alta)</li>
+                            <li data-i18n="paq2-i3">Hospedaje en hotel 3 estrellas</li>
+                            <li data-i18n="paq2-i4">Desayuno y 2 almuerzos</li>
+                            <li data-i18n="paq2-i5">Transporte privado entre destinos</li>
+                            <li data-i18n="paq2-i6">Guía bilingüe y asistencia 24h</li>
+                            <li data-i18n="paq2-i7">Entradas a atractivos principales</li>
+                        </ul>
+                    </div>
+                    <div class="paquete-footer">
+                        <a href="#" class="btn btn-azul" data-i18n="btn-reservar">Consultar disponibilidad</a>
+                    </div>
+                </article>
+
+                <!-- PAQUETE 3 – PREMIUM -->
+                <article class="paquete-card">
+                    <div class="paquete-header premium">
+                        <span class="etiqueta" data-i18n="etiqueta-premium">Premium</span>
+                        <h3 data-i18n="paq3-nombre">Experiencia Orense Completa</h3>
+                        <div class="precio">$280 <span data-i18n="por-persona">/ persona</span></div>
+                        <p data-i18n="paq3-duracion">4 días / 3 noches</p>
+                    </div>
+                    <div class="paquete-body">
+                        <ul>
+                            <li data-i18n="paq3-i1">Machala + Puerto Bolívar + Jambelí</li>
+                            <li data-i18n="paq3-i2">Zaruma, Portovelo y Piñas</li>
+                            <li data-i18n="paq3-i3">Bosque Petrificado de Puyango</li>
+                            <li data-i18n="paq3-i4">Hoteles 4 estrellas / hosterías boutique</li>
+                            <li data-i18n="paq3-i5">Todas las comidas incluidas</li>
+                            <li data-i18n="paq3-i6">Transporte privado + chofer</li>
+                            <li data-i18n="paq3-i7">Guía profesional bilingüe</li>
+                            <li data-i18n="paq3-i8">Seguro de viaje básico</li>
+                            <li data-i18n="paq3-i9">Actividades culturales y degustaciones</li>
+                        </ul>
+                    </div>
+                    <div class="paquete-footer">
+                        <a href="#" class="btn btn-oro" data-i18n="btn-reservar">Consultar disponibilidad</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="aviso">
+            <h3 data-i18n="nota-paquetes-titulo">Nota importante</h3>
+            <p data-i18n="nota-paquetes-texto">
+                Los precios son referenciales y pueden variar según temporada y número de personas. 
+                Antes de reservar te damos información actualizada sobre seguridad en las zonas a visitar.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="marca">Urma</div>
+        <p data-i18n="footer1">Sitio informativo sobre la Provincia de El Oro – Ecuador</p>
+        <p><a href="index.html" data-i18n="volver-inicio">Volver al inicio</a></p>
+    </footer>
+
+    <script src="idioma.js"></script>
+</body>
+</html>

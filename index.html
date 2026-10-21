@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urma – Guía de El Oro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Urma <span>– El Oro</span></h1>
+            <p data-i18n="subtitulo-inicio">Guía turística interactiva de El Oro</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="activo" data-i18n="nav-inicio">Inicio</a></li>
+            <li><a href="problemas.html" data-i18n="nav-problemas">Problemas</a></li>
+            <li><a href="consejos.html" data-i18n="nav-consejos">Consejos</a></li>
+            <li><a href="cantones.html" data-i18n="nav-cantones">Cantones</a></li>
+            <li><a href="paquetes.html" data-i18n="nav-paquetes">Paquetes</a></li>
+            <li class="idioma-switch">
+                <button class="btn-idioma activo" data-lang="es" onclick="cambiarIdioma('es')">ES</button>
+                <button class="btn-idioma" data-lang="en" onclick="cambiarIdioma('en')">EN</button>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+
+        <section class="hero">
+            <h2 data-i18n="hero-titulo">Bienvenido a El Oro con Urma</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Aerial_image_of_Machala%2C_Ecuador.jpg/1280px-Aerial_image_of_Machala%2C_Ecuador.jpg" 
+                 alt="Vista aérea de Machala" 
+                 class="imagen-principal">
+            <p data-i18n="hero-texto">
+                Descubre los atractivos, los desafíos y los consejos prácticos para viajar 
+                por una de las provincias más productivas y diversas de Ecuador.
+            </p>
+            <div class="botones-hero">
+                <a href="problemas.html" class="btn btn-rojo" data-i18n="btn-problemas">Ver problemas para turistas</a>
+                <a href="consejos.html" class="btn btn-verde" data-i18n="btn-consejos">Ver consejos de viaje</a>
+                <a href="paquetes.html" class="btn btn-oro" data-i18n="btn-paquetes">Ver paquetes turísticos</a>
+            </div>
+        </section>
+
+        <section>
+            <h2 data-i18n="que-encontrar">¿Qué encontrarás en este sitio?</h2>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3 data-i18n="tarjeta1-titulo">Problemas reales</h3>
+                    <p data-i18n="tarjeta1-texto">Inseguridad, clima, infraestructura y otros desafíos que enfrentan los turistas.</p>
+                    <a href="problemas.html" data-i18n="tarjeta1-link">Ir a Problemas →</a>
+                </div>
+                <div class="tarjeta">
+                    <h3 data-i18n="tarjeta2-titulo">Consejos prácticos</h3>
+                    <p data-i18n="tarjeta2-texto">Recomendaciones claras para viajar con más seguridad y tranquilidad.</p>
+                    <a href="consejos.html" data-i18n="tarjeta2-link">Ir a Consejos →</a>
+                </div>
+                <div class="tarjeta">
+                    <h3 data-i18n="tarjeta3-titulo">Los 14 cantones</h3>
+                    <p data-i18n="tarjeta3-texto">Conoce cada cantón de la provincia de forma interactiva.</p>
+                    <a href="cantones.html" data-i18n="tarjeta3-link">Ver cantones →</a>
+                </div>
+                <div class="tarjeta">
+                    <h3 data-i18n="tarjeta4-titulo">Paquetes turísticos</h3>
+                    <p data-i18n="tarjeta4-texto">Planes económicos, intermedios y premium para disfrutar El Oro.</p>
+                    <a href="paquetes.html" data-i18n="tarjeta4-link">Ver paquetes →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-rapida">
+            <h2 data-i18n="datos-titulo">Datos rápidos de El Oro</h2>
+            <ul>
+                <li data-i18n="dato1"><strong>Capital:</strong> Machala</li>
+                <li data-i18n="dato2"><strong>Cantones:</strong> 14</li>
+                <li data-i18n="dato3"><strong>Población aproximada:</strong> más de 700.000 habitantes</li>
+                <li data-i18n="dato4"><strong>Atractivos principales:</strong> Playas de Jambelí, Puerto Bolívar, Zaruma, Piñas, bosque petrificado de Puyango</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="marca">Urma</div>
+        <p data-i18n="footer1">Sitio informativo sobre la Provincia de El Oro – Ecuador</p>
+        <p data-i18n="footer2">Hecho para orientación de viajeros | 2026</p>
+    </footer>
+
+    <script src="idioma.js"></script>
+</body>
+</html>

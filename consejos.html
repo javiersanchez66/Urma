@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consejos de Viaje | Provincia de El Oro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Urma <span>– El Oro</span></h1>
+            <p data-i18n="subtitulo-consejos">Consejos prácticos para viajar con más seguridad</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" data-i18n="nav-inicio">Inicio</a></li>
+            <li><a href="problemas.html" data-i18n="nav-problemas">Problemas</a></li>
+            <li><a href="consejos.html" class="activo" data-i18n="nav-consejos">Consejos</a></li>
+            <li><a href="cantones.html" data-i18n="nav-cantones">Cantones</a></li>
+            <li><a href="paquetes.html" data-i18n="nav-paquetes">Paquetes</a></li>
+            <li class="idioma-switch">
+                <button class="btn-idioma activo" data-lang="es" onclick="cambiarIdioma('es')">ES</button>
+                <button class="btn-idioma" data-lang="en" onclick="cambiarIdioma('en')">EN</button>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+
+        <section>
+            <h2 data-i18n="consejos-titulo">Consejos para viajar a El Oro</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Zaruma%2C_Ecuador_-_panoramio.jpg" 
+                 alt="Zaruma - destino recomendado de la zona alta" 
+                 class="imagen-principal imagen-zaruma">
+            <p class="intro" data-i18n="consejos-intro">
+                Sigue estas recomendaciones para disfrutar tu viaje con mayor tranquilidad.
+            </p>
+
+            <div class="consejos-lista">
+                <div class="consejo-item">
+                    <div class="numero">1</div>
+                    <div class="texto">
+                        <h3 data-i18n="consejo1-titulo">Consulta la situación actual</h3>
+                        <p data-i18n="consejo1-texto">Antes de salir, revisa noticias locales o fuentes oficiales sobre seguridad y estado de las carreteras.</p>
+                    </div>
+                </div>
+
+                <div class="consejo-item">
+                    <div class="numero">2</div>
+                    <div class="texto">
+                        <h3 data-i18n="consejo2-titulo">Prefiere desplazarte de día</h3>
+                        <p data-i18n="consejo2-texto">Evita circular por zonas poco transitadas durante la noche, especialmente en la zona costera.</p>
+                    </div>
+                </div>
+
+                <div class="consejo-item">
+                    <div class="numero">3</div>
+                    <div class="texto">
+                        <h3 data-i18n="consejo3-titulo">Presta atención al oleaje</h3>
+                        <p data-i18n="consejo3-texto">En playas como Jambelí sigue siempre las indicaciones de guardavidas y las alertas de Inocar.</p>
+                    </div>
+                </div>
+
+                <div class="consejo-item">
+                    <div class="numero">4</div>
+                    <div class="texto">
+                        <h3 data-i18n="consejo4-titulo">Zona alta suele ser más tranquila</h3>
+                        <p data-i18n="consejo4-texto">Los cantones de altura (Zaruma, Piñas, Portovelo, Atahualpa) generalmente reportan mejor percepción de seguridad.</p>
+                    </div>
+                </div>
+
+                <div class="consejo-item">
+                    <div class="numero">5</div>
+                    <div class="texto">
+                        <h3 data-i18n="consejo5-titulo">Usa transporte formal</h3>
+                        <p data-i18n="consejo5-texto">Prefiere cooperativas conocidas o servicios de transporte oficial. Evita mostrar objetos de valor en la calle.</p>
+                    </div>
+                </div>
+
+                <div class="consejo-item">
+                    <div class="numero">6</div>
+                    <div class="texto">
+                        <h3 data-i18n="consejo6-titulo">Informa tu itinerario</h3>
+                        <p data-i18n="consejo6-texto">Deja siempre a alguien de confianza saber a dónde vas y cuándo planeas regresar.</p>
+                    </div>
+                </div>
+
+                <div class="consejo-item">
+                    <div class="numero">7</div>
+                    <div class="texto">
+                        <h3 data-i18n="consejo7-titulo">Revisa el estado de las vías</h3>
+                        <p data-i18n="consejo7-texto">Si viajas hacia la zona montañosa, confirma el estado de las carreteras (pueden haber deslizamientos en época de lluvia).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="zona-recomendada">
+            <h2 data-i18n="zona-titulo">¿Dónde hay más tranquilidad?</h2>
+            <p data-i18n="zona-texto">
+                Según reportes de operadores turísticos, durante feriados los visitantes 
+                suelen preferir la parte alta de la provincia 
+                (Piñas, Zaruma, Portovelo y Atahualpa) por la percepción de mayor seguridad 
+                y la oferta de actividades culturales y de naturaleza.
+            </p>
+            <a href="cantones.html" class="btn btn-azul" data-i18n="btn-ver-cantones">Ver todos los cantones</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="marca">Urma</div>
+        <p data-i18n="footer1">Sitio informativo sobre la Provincia de El Oro – Ecuador</p>
+        <p><a href="index.html" data-i18n="volver-inicio">Volver al inicio</a></p>
+    </footer>
+
+    <script src="idioma.js"></script>
+</body>
+</html>
